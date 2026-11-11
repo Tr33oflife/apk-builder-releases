@@ -96,6 +96,10 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.7 — Generate a keystore
+
+- No keystore yet? **Generate one on this PC** from Step 2 or the Profiles editor — keytool makes the keystore, a matching key.properties comes with it, the signing fields are filled in, and the new certificate's SHA-256 fingerprint is shown (and offered as the expected signer).
+
 ### v0.9.6 — GitHub sign-in
 
 - **Connect GitHub** (device sign-in in the browser) replaces pasting a personal access token; the token lives in the Windows Credential Manager either way.

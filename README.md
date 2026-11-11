@@ -96,6 +96,14 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.9 — Hotfix: the keystore dialog's buttons work again
+
+- In v0.9.7/v0.9.8 the Generate-a-keystore dialog opened but its buttons were dead — its markup sat after the app's script tag, so the startup wiring never reached it. Moved, and the order is now guarded by a test.
+
+### v0.9.8 — Password generators
+
+- Generate buttons beside the keystore dialog's password fields: strong 20-character passwords, look-alikes removed, shown in plain text so they can be saved.
+
 ### v0.9.7 — Generate a keystore
 
 - No keystore yet? **Generate one on this PC** from Step 2 or the Profiles editor — keytool makes the keystore, a matching key.properties comes with it, the signing fields are filled in, and the new certificate's SHA-256 fingerprint is shown (and offered as the expected signer).

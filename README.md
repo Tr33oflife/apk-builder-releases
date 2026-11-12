@@ -96,6 +96,10 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.10 — Keystore generation asks where to save, and fills the fields
+
+- A **Save to folder** field with a **Browse** button in the dialog, prefilled with the managed default — pick any folder (for example on D:) before generating. The pair is filled into the setup and the loaded profile automatically; no hunting for the files afterwards.
+
 ### v0.9.9 — Hotfix: the keystore dialog's buttons work again
 
 - In v0.9.7/v0.9.8 the Generate-a-keystore dialog opened but its buttons were dead — its markup sat after the app's script tag, so the startup wiring never reached it. Moved, and the order is now guarded by a test.

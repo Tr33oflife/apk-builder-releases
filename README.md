@@ -96,6 +96,10 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.11 — A real Windows window, and the fast-resume fix
+
+- APK Builder opens in **its own window** now (WebView2) — no console, no browser tab; closing it cancels any running build and leaves nothing behind. Fast Resume verifies the generated plugin linkage before trusting a skip, so the io.sentry failure can't recur silently.
+
 ### v0.9.10 — Keystore generation asks where to save, and fills the fields
 
 - A **Save to folder** field with a **Browse** button in the dialog, prefilled with the managed default — pick any folder (for example on D:) before generating. The pair is filled into the setup and the loaded profile automatically; no hunting for the files afterwards.

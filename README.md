@@ -96,6 +96,10 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.13 — The remote build queue
+
+- APK Builder now **polls a small Cloudflare Worker queue** for build jobs posted over HTTPS and builds them with the profiles on the PC — hands-free, no Actions/Codemagic caps. Results report back automatically; jobs needing signing passwords park in the Watches room for a local release. (Also carries v0.9.12's cmd-flash hotfix.)
+
 ### v0.9.11 — A real Windows window, and the fast-resume fix
 
 - APK Builder opens in **its own window** now (WebView2) — no console, no browser tab; closing it cancels any running build and leaves nothing behind. Fast Resume verifies the generated plugin linkage before trusting a skip, so the io.sentry failure can't recur silently.

@@ -96,6 +96,10 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.17 — Background builds are visible
+
+- A **now-building bar** (profile, current step, elapsed, origin — git watch / folder drop / remote queue / started here — plus the waiting queue and a waiting-for-password chip) and **toasts** when a background build starts, finishes, fails, or parks. Clicking the bar opens the live steps-and-log view. Background builds no longer run invisibly until they land in History.
+
 ### v0.9.16 — Folder build drops + watcher git-auth fix
 
 - A **.zip with `apk_builder.yaml`** dropped into a watched folder is now a build request, dispatched through the watch ledger with delivery of the finished APKs back into the same folder. And git watches on private repos now poll with the app's own GitHub token — no more stalls on the PC's git credential helper. (Includes v0.9.15.)

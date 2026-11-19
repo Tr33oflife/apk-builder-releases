@@ -96,6 +96,10 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.14 — Folder watches (Drive delivery + landings)
+
+- Profiles can **deliver finished APKs into a watched folder** (a Google Drive sync folder is the classic), and every APK that lands in a watched folder — from any source — is **verified and logged** in a landings ledger once it has finished syncing.
+
 ### v0.9.13 — The remote build queue
 
 - APK Builder now **polls a small Cloudflare Worker queue** for build jobs posted over HTTPS and builds them with the profiles on the PC — hands-free, no Actions/Codemagic caps. Results report back automatically; jobs needing signing passwords park in the Watches room for a local release. (Also carries v0.9.12's cmd-flash hotfix.)

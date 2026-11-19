@@ -96,6 +96,10 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.20 — The app lives in the system tray
+
+Closing the window hides APK Builder to the tray instead of quitting — the watches, the queue and running builds keep going. Double-click the tray icon to reopen; right-click for Open / Quit. A Settings toggle restores X-quits.
+
 ### v0.9.19 — A sound when a build is grabbed
 
 - The **Windows Asterisk sound** plays when a watcher, folder drop or queue job grabs a build — started, queued behind the running build, or parked for its signing password. It follows your Windows sound scheme and volume, and has its own Settings toggle beside the notification one.

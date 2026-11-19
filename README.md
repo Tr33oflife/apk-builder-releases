@@ -96,6 +96,10 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.37 — Paired builds (Settings toggle)
+
+- When the new toggle is on, a pinned-commit build whose profile names an also-build target starts that target at the same time instead of chaining it after success. The paired build publishes only if the main build succeeds.
+
 ### v0.9.36 — Personal build gains built-in repo watches
 
 - No changes for standard installs. The owner's personal build now seeds bound git watches for his other app repos (House Remote, Harbor, Recipes), each landing when its profile exists.

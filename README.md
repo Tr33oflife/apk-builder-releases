@@ -96,6 +96,13 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.28 — Retry build, right on the failure
+- Failed and cancelled builds in History carry a **Retry build** button: one click re-dispatches the same profile, branch and pinned commit — watcher-dispatched builds included. Records now stamp their commit and origin (older records retry at the branch head), and a profile that signs with a typed password points at the Build screen instead of retrying blind.
+
+### v0.9.27 — A dirty work folder names its files
+- The Source step's dirty-tree refusal now lists the changed files (the check always ran git status — it threw the list away). Untracked copies of the builder's own staged signing files, left behind when a build is interrupted, are cleared automatically with a note in the log; anything else is named and never touched.
+
+
 ### v0.9.26 — The personal build sets up the TavV Windows chain itself
 - A version bump for the public build (behaviour unchanged from v0.9.25). In the owner's personal build, a first-run seed now points the TavV profile's "Also build" at the TavV Windows profile and binds its Drive delivery — the v0.9.25 chain with no manual setup.
 

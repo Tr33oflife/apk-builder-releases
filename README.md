@@ -96,6 +96,10 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.19 — A sound when a build is grabbed
+
+- The **Windows Asterisk sound** plays when a watcher, folder drop or queue job grabs a build — started, queued behind the running build, or parked for its signing password. It follows your Windows sound scheme and volume, and has its own Settings toggle beside the notification one.
+
 ### v0.9.18 — Windows notifications + live views
 
 - **Tray notifications** when a watcher, folder drop or queue job grabs a build, when any build finishes, and when one parks for its signing password (mutable in Settings). Plus **Refresh buttons** on the Progress and History views, a **currently-building card** at the top of History, and **2-second auto-refresh** on both views while open.

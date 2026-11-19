@@ -96,6 +96,11 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.33 — Retry keeps the original build's publish intent
+
+- Every build record stamps the publish intent its dispatch carried; Retry build re-applies it, so a retried build publishes (or doesn't) exactly as the original dispatch did — closing the gap that left TavV 1309 and 1310 built but unpublished.
+- Records from older versions carry no stamp; retrying a watch or folder build from one uses that dispatcher's publish-by-default.
+
 ### v0.9.32 — Changelogs are back on auto-published releases
 
 - A build whose commit carries RELEASE_NOTES.md at its root publishes with that file's exact contents as the release body — read from the built commit itself, never from loose files on disk.

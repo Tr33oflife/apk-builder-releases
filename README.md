@@ -96,6 +96,11 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.32 — Changelogs are back on auto-published releases
+
+- A build whose commit carries RELEASE_NOTES.md at its root publishes with that file's exact contents as the release body — read from the built commit itself, never from loose files on disk.
+- No notes file (or an empty one) publishes exactly as before; a notes file can never fail a build or a publish.
+
 ### v0.9.31 — Builds stop refusing on Flutter's own files, and build news leaves the PC
 
 - The dirty-tree guard heals the plugin-registrant files Flutter regenerates on every build; real edits still stop a build, named.

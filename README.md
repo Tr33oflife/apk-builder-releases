@@ -96,6 +96,11 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.30 — The Windows build finds the right SDK, and GitHub stays logged in
+- Windows-bundle builds now run their steps with the pinned Windows Flutter's folder first on the PATH. Project scripts locate their SDK from the first flutter.bat on PATH; with the Android Flutter first, the patched-engine script read the wrong SDK's engine stamp and refused good builds.
+- GitHub sign-in keeps the login's refresh token and renews the access token in the background before it lapses. Connect once more after updating so the refresh token is on file.
+- Git failures now quote git's own last lines instead of a bare "exit status 128".
+
 ### v0.9.29 — Build folders live on the storage drive
 - The seeded profiles (TavV, House Remote, TavV Windows) hardcoded their work and output folders under the home folder, ignoring the storage base in Settings — on a machine with a small C: drive, the build trees landed there anyway. The seeds now follow the storage base like everything else.
 

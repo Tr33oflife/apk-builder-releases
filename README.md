@@ -96,6 +96,10 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.36 — Personal build gains built-in repo watches
+
+- No changes for standard installs. The owner's personal build now seeds bound git watches for his other app repos (House Remote, Harbor, Recipes), each landing when its profile exists.
+
 ### v0.9.35 — Open output folder on every History card
 
 - Every History record — published, failed, or cancelled — now has an Open output folder button that answers in the card (previously it appeared only on unpublished successes).

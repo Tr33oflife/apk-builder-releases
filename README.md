@@ -96,6 +96,10 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.25 — Build the Windows version with the APKs
+- Profiles can chain: an **"Also build after this one"** picker in the profile editor. When a build of the profile succeeds, the chosen profile builds right after it, from the same commit — watch builds included, one level deep, each profile publishing by its own settings (point a Windows-bundle profile at the same publish repo and its zip lands on the same release as the APKs).
+
+
 ### v0.9.24 — Edit watches in place
 
 Each watch row has an Edit button that loads the watch into the form — poll rate included — and saving preserves its polling history, so a rate change never re-baselines or misses a push. No more delete-and-re-add.

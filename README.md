@@ -94,9 +94,11 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 ## Changelog
 
-- **v0.9.40** — Publish is visible and bounded: a Publish step (ok / failed / skipped) plus a "Publishing …" log line, the GitHub timeout drops from 10 minutes to 2, Cancel build / Refresh report their result in the page, and Go-route builds can publish (their artifact record never carried the file path).
-
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
+
+### v0.9.40 — Publish is visible, bounded, and honest
+
+- The step list gains a Publish step (running while the chain publishes, then ok / failed / skipped), the publish attempt logs its start, and the GitHub API timeout drops from 10 minutes to 2 — a stalled upload no longer sits invisible at "Verify ok" for a quarter of an hour. Cancel build / Refresh report their result in the page, and Go-route builds can publish at all (their verified artifact record never carried the file's path).
 
 ### v0.9.37 — Paired builds (Settings toggle)
 

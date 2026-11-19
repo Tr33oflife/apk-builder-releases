@@ -96,6 +96,10 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.29 — Build folders live on the storage drive
+- The seeded profiles (TavV, House Remote, TavV Windows) hardcoded their work and output folders under the home folder, ignoring the storage base in Settings — on a machine with a small C: drive, the build trees landed there anyway. The seeds now follow the storage base like everything else.
+
+
 ### v0.9.28 — Retry build, right on the failure
 - Failed and cancelled builds in History carry a **Retry build** button: one click re-dispatches the same profile, branch and pinned commit — watcher-dispatched builds included. Records now stamp their commit and origin (older records retry at the branch head), and a profile that signs with a typed password points at the Build screen instead of retrying blind.
 

@@ -96,6 +96,10 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.16 — Folder build drops + watcher git-auth fix
+
+- A **.zip with `apk_builder.yaml`** dropped into a watched folder is now a build request, dispatched through the watch ledger with delivery of the finished APKs back into the same folder. And git watches on private repos now poll with the app's own GitHub token — no more stalls on the PC's git credential helper. (Includes v0.9.15.)
+
 ### v0.9.14 — Folder watches (Drive delivery + landings)
 
 - Profiles can **deliver finished APKs into a watched folder** (a Google Drive sync folder is the classic), and every APK that lands in a watched folder — from any source — is **verified and logged** in a landings ledger once it has finished syncing.

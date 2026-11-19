@@ -96,6 +96,11 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.34 — Test buttons for notifications, and saves that prove themselves
+
+- Settings gains Test ntfy, Test Discord, and Test relay buttons: each saves what is on screen, fires one test event, and prints the channel's own answer beside the button.
+- Token saves (relay, queue, GitHub paste) now verify themselves — stored, read back, compared — and every save in Settings reports its outcome in words instead of failing silently.
+
 ### v0.9.33 — Retry keeps the original build's publish intent
 
 - Every build record stamps the publish intent its dispatch carried; Retry build re-applies it, so a retried build publishes (or doesn't) exactly as the original dispatch did — closing the gap that left TavV 1309 and 1310 built but unpublished.

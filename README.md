@@ -96,6 +96,10 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.18 — Windows notifications + live views
+
+- **Tray notifications** when a watcher, folder drop or queue job grabs a build, when any build finishes, and when one parks for its signing password (mutable in Settings). Plus **Refresh buttons** on the Progress and History views, a **currently-building card** at the top of History, and **2-second auto-refresh** on both views while open.
+
 ### v0.9.17 — Background builds are visible
 
 - A **now-building bar** (profile, current step, elapsed, origin — git watch / folder drop / remote queue / started here — plus the waiting queue and a waiting-for-password chip) and **toasts** when a background build starts, finishes, fails, or parks. Clicking the bar opens the live steps-and-log view. Background builds no longer run invisibly until they land in History.

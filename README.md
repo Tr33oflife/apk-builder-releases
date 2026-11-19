@@ -96,6 +96,12 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.31 — Builds stop refusing on Flutter's own files, and build news leaves the PC
+
+- The dirty-tree guard heals the plugin-registrant files Flutter regenerates on every build; real edits still stop a build, named.
+- The failure line is written into the build log itself, and failed git probes quote git's own words.
+- Optional outbound notifications (Settings): ntfy phone notifications and Discord webhook posts for grabbed / started / succeeded / failed, plus finished builds posted — outcome and full log — to a results relay.
+
 ### v0.9.30 — The Windows build finds the right SDK, and GitHub stays logged in
 - Windows-bundle builds now run their steps with the pinned Windows Flutter's folder first on the PATH. Project scripts locate their SDK from the first flutter.bat on PATH; with the Android Flutter first, the patched-engine script read the wrong SDK's engine stamp and refused good builds.
 - GitHub sign-in keeps the login's refresh token and renews the access token in the background before it lapses. Connect once more after updating so the refresh token is on file.

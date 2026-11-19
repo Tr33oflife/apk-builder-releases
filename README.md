@@ -96,6 +96,10 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.26 — The personal build sets up the TavV Windows chain itself
+- A version bump for the public build (behaviour unchanged from v0.9.25). In the owner's personal build, a first-run seed now points the TavV profile's "Also build" at the TavV Windows profile and binds its Drive delivery — the v0.9.25 chain with no manual setup.
+
+
 ### v0.9.25 — Build the Windows version with the APKs
 - Profiles can chain: an **"Also build after this one"** picker in the profile editor. When a build of the profile succeeds, the chosen profile builds right after it, from the same commit — watch builds included, one level deep, each profile publishing by its own settings (point a Windows-bundle profile at the same publish repo and its zip lands on the same release as the APKs).
 

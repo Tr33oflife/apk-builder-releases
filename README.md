@@ -96,6 +96,10 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.24 — Edit watches in place
+
+Each watch row has an Edit button that loads the watch into the form — poll rate included — and saving preserves its polling history, so a rate change never re-baselines or misses a push. No more delete-and-re-add.
+
 ### v0.9.23 — The watch poll timer is yours
 
 The watch form's poll field is a dropdown — 30 seconds to 30 minutes — and the default drops from 5 minutes to 2, so existing watches pick up the faster rate on update with no action needed.

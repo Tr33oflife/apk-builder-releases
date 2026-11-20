@@ -96,6 +96,10 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.42 — Disconnect GitHub exists now
+
+- A Disconnect GitHub button in the sidebar footer, shown exactly when a token is set and wired to the token-delete endpoint that previously had no UI control at all — with a token stored, the connect form hides itself, so a dead token left no way back in.
+
 ### v0.9.41 — House Remote can publish again
 
 - The release-asset upload URL query-escapes the asset name: House Remote's APK filename contains spaces and plus signs, and sent raw the upload request was malformed — GitHub's upload edge never answered and auto-publish died at the timeout on 1.4.0 and 1.4.1, while TavV's clean-named assets published fine.

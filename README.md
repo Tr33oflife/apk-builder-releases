@@ -96,6 +96,10 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.41 — House Remote can publish again
+
+- The release-asset upload URL query-escapes the asset name: House Remote's APK filename contains spaces and plus signs, and sent raw the upload request was malformed — GitHub's upload edge never answered and auto-publish died at the timeout on 1.4.0 and 1.4.1, while TavV's clean-named assets published fine.
+
 ### v0.9.40 — Publish is visible, bounded, and honest
 
 - The step list gains a Publish step (running while the chain publishes, then ok / failed / skipped), the publish attempt logs its start, and the GitHub API timeout drops from 10 minutes to 2 — a stalled upload no longer sits invisible at "Verify ok" for a quarter of an hour. Cancel build / Refresh report their result in the page, and Go-route builds can publish at all (their verified artifact record never carried the file's path).

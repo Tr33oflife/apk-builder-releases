@@ -96,6 +96,10 @@ The app is unsigned, so Windows will warn on the first run: **More info → Run 
 
 Full notes live on each [release](https://github.com/Tr33oflife/apk-builder-releases/releases); the headlines:
 
+### v0.9.43 — Queue jobs can bring their own profile
+
+- A remote-queue job may carry a profile recipe (repo, route, publish target, branch); when the named profile does not exist on the PC, the app creates it from the recipe and builds — new apps no longer need a watch or a hands-on profile setup before their first queued build.
+
 ### v0.9.42 — Disconnect GitHub exists now
 
 - A Disconnect GitHub button in the sidebar footer, shown exactly when a token is set and wired to the token-delete endpoint that previously had no UI control at all — with a token stored, the connect form hides itself, so a dead token left no way back in.
